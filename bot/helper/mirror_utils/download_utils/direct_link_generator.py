@@ -121,8 +121,8 @@ def fshare(url: str) -> str:
     name2 = name1.text.split('>')[0]
     print(name2)
     dl1 = ngay[0]
-    dl2 = dl1.text.split('| ')[1].split('<')[0]
-    dl3 = dl1.text.split('| ')[1].split(' ')[0]
+    dl3 = name2.split('| ')[1].split(' ')[0]
+    dl2 = name2.split('| ')[1].split(' ')[1]
     dl3 = float(dl3)
     print(dl3)
     if "GB" in dl2:
