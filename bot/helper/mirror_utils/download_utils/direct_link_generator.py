@@ -116,13 +116,10 @@ def fshare(url: str) -> str:
       ngay = soup.find_all("div", {"class": "mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-12-phone btn_vip"})
     else:
       ngay = soup.find_all("a", {"class": "full-width tool-tip btn-tablet btn-tablet btn_download_vip"}) 
-    filename = soup.find_all("div", {"file-name md-tooltip--bottom"})
-    name1 = filename[0]
-    name2 = name1.text.split('>')[0]
-    print(name2)
-    dl1 = ngay[0]
-    dl3 = name2.split('| ')[1].split(' ')[0]
-    dl2 = name2.split('| ')[1].split(' ')[1]
+    file_name = soup.find('div', {'class': 'file-name'})['data-md-tooltip']
+    size = soup.find('div', {'style': re.compile('width:.*color: #CD1417;')}).text
+    dl3 = size.split(' ')[0]
+    dl2 = size.split(' ')[1]
     dl3 = float(dl3)
     print(dl3)
     if "GB" in dl2:
