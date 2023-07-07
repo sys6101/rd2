@@ -1,6 +1,6 @@
 import requests
 import cloudscraper
-
+import re
 from os import path as ospath
 from math import pow, floor
 from http.cookiejar import MozillaCookieJar
