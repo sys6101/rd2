@@ -134,8 +134,8 @@ def fshare(url: str) -> str:
       header = {
       
       "content-type": "application/json",
-      #"Fshare-User-Agent": "botfshare-KH6S9A",
-     "User-Agent": "botfshare-KH6S9A",
+      #"Fshare-User-Agent": "fsharevn-MX3IEA",
+     "User-Agent": "fsharevn-MX3IEA",
        "Pragma": "no-cache",
       "Accept": "*/*"
   }
@@ -160,8 +160,8 @@ def fshare(url: str) -> str:
         header1 = {
       
       "content-type": "application/json",
-      "Fshare-User-Agent": "botfshare-KH6S9A",
-      "User-Agent": "botfshare-KH6S9A",
+      #"Fshare-User-Agent": "botfshare-KH6S9A",
+      "User-Agent": "fsharevn-MX3IEA",
        "Pragma": "no-cache",
       "Accept": "*/*",
       "Cookie": "session_id="+session_id
@@ -188,7 +188,7 @@ def fshare(url: str) -> str:
       
       "content-type": "application/json",
       #"Fshare-User-Agent": "botfshare-KH6S9A",
-     "User-Agent": "botfshare-KH6S9A",
+     "User-Agent": "fsharevn-MX3IEA",
        "Pragma": "no-cache",
       "Accept": "*/*"
   }
@@ -213,8 +213,8 @@ def fshare(url: str) -> str:
        header1 = {
       
       "content-type": "application/json",
-      "Fshare-User-Agent": "botfshare-KH6S9A",
-      "User-Agent": "botfshare-KH6S9A",
+      #"Fshare-User-Agent": "botfshare-KH6S9A",
+      "User-Agent": "fsharevn-MX3IEA",
        "Pragma": "no-cache",
       "Accept": "*/*",
       "Cookie": "session_id="+session_id
